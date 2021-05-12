@@ -7,10 +7,10 @@ ClusterShapley
 ClusterShapley is a technique to explain non-linear dimendionality reduction results. You can explain the cluster formation after reducing the dimensionality to 2D.
 
 -----------
-Instalation
+Installation
 -----------
 
-ClusterShapley depends upon common machine learning libraries, such as ``scikit-learn`` and ``NumPy``.
+ClusterShapley depends upon common machine learning libraries, such as ``scikit-learn`` and ``NumPy``. It also depends on SHAP.
 
 Requirements:
 
@@ -77,7 +77,7 @@ Now, you can generate explanations to understand why UMAP (or any other DR techn
 	shap_values = clusterShapley.transform(to_explain)
 
 The matrix shap_values of shape (3, 30, 4) contains: 
-	* the feature contributions for each cluster/class (3);
+	* the features' contributions for each class (3);
 	* upon the samples used to generate explanations (30);
 	* for each feature (4).
 
@@ -95,18 +95,17 @@ For now, you can rely on SHAP library to visualize the contributions
 .. image:: docs/artwork/explanation_iris0.png
 	:alt: Contributions for the embedding of class 0
 
-The plot shows the contributions of each feature for cluster/class cohesion for the selected cluster/class.
-Example for 'petal length (cm)':
+The plot shows the contributions of each feature for the cohesion of the selected class. Example for 'petal length (cm)':
 
-	* Low feature values (blue) contribute for the cohesion of the selected class/cluster.
-	* Higher feature values (red) do not contribute for the cohesion.
+	* Low feature values (blue) contribute for the cohesion of the selected class.
+	* Higher feature values (red) *do not* contribute for the cohesion.
 
 
 **Defining your own clusters**
 
-Suppose you want to investigate why UMAP cluster 2 classes together while projecting the third one distant in 2D.
+Suppose you want to investigate why UMAP clustered 2 classes together while projecting the third one distant in 2D.
 
-To investigate that, we can use ClusterShapley to explain how the features contribute to these two major clusters.
+To understand that, we can use ClusterShapley to explain how the features contribute to these two major clusters.
 
 
 .. code:: python
@@ -157,7 +156,7 @@ On the other hand, the left cluster (composed by two classes) is characterized b
 Citation
 --------
 
-Please, use the following reference to cite HUMAP in your work:
+Please, use the following reference to further details and to cite ClusterShapley in your work:
 
 .. code:: bibtex
 
