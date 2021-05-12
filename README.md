@@ -1,10 +1,4 @@
-# ClusterShapley
-Explaining dimensionality results using SHAP values
-
 .. -*- mode: rst -*-
-
-.. image:: images/fmnist-cover.png
-	:alt: HUMAP exploration on Fashion MNIST dataset
 
 =====
 ClusterShapley
