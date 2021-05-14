@@ -4,7 +4,7 @@
 ClusterShapley
 =====
 
-ClusterShapley is a technique to explain non-linear dimendionality reduction results. You can explain the cluster formation after reducing the dimensionality to 2D.
+ClusterShapley is a technique to explain non-linear dimendionality reduction results. You can explain the cluster formation after reducing the dimensionality to 2D. Read the `preprint <https://arxiv.org/abs/2103.05678>`_ or `publisher <https://doi.org/10.1016/j.eswa.2021.115020>`_ versions for further details.
 
 -----------
 Installation
