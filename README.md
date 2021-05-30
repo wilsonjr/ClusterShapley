@@ -2,6 +2,12 @@
 
 |pypi_version|_ |pypi_downloads|_
 
+.. |pypi_version| image:: https://img.shields.io/pypi/v/cluster-shapley.svg
+.. _pypi_version: https://pypi.python.org/pypi/cluster-shapley/
+
+.. |pypi_downloads| image:: https://pepy.tech/badge/cluster-shapley/month
+.. _pypi_downloads: https://pepy.tech/project/cluster-shapley
+
 =====
 ClusterShapley
 =====
