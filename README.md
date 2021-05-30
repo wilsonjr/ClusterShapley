@@ -1,5 +1,7 @@
 .. -*- mode: rst -*-
 
+|pypi_version|_ |pypi_downloads|_
+
 =====
 ClusterShapley
 =====
