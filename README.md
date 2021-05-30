@@ -18,6 +18,7 @@ Requirements:
 * numpy
 * scipy
 * scikit-learn
+* pybind11
 
 If you have these requirements installed, use PyPI:
 
