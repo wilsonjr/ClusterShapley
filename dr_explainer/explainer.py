@@ -1,3 +1,5 @@
+import _cluster_shapley
+
 import shap
 import random
 
@@ -64,10 +66,13 @@ class ClusterShapley:
 
     def _predict_proba(self, x):
         distances = np.zeros((len(x), self.centroids.shape[0]))
+
+        fast_cs = _cluster_shapley.ClusterShapley()
+        distances = fast_cs.compute_distances(x, self.centroids)
         
-        for k in range(distances.shape[0]):
-            for i in range(distances.shape[1]):
-                distances[k, i] = np.linalg.norm(self.centroids[i]-x[k])
+        # for k in range(distances.shape[0]):
+        #     for i in range(distances.shape[1]):
+        #         distances[k, i] = np.linalg.norm(self.centroids[i]-x[k])
         
         distances = normalize(distances, 'l1')
         
