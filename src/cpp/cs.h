@@ -39,8 +39,6 @@
 #include <pybind11/pybind11.h>
 #include <pybind11/numpy.h>
 #include <pybind11/stl.h>
-#include <pybind11/eigen.h>
-
 
 
 using namespace std;
@@ -59,11 +57,7 @@ public:
 
 private:
 	double distance(const double* a, const double* b, size_t n);
-
 };
-
-
-
 }
 
 
