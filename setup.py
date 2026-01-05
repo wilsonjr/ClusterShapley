@@ -61,7 +61,7 @@ setup(
     # Currently, build_ext only provides an optional "highest supported C++
     # level" feature, but in the future it may provide more features.
     cmdclass={"build_ext": build_ext},
-    install_requires=['scipy', 'sklearn', 'numpy', 'shap==0.41.0', 'pybind11'],
+    install_requires=['scipy', 'scikit-learn', 'numpy', 'shap==0.41.0', 'pybind11'],
     packages=['dr_explainer'],
     zip_safe=False,
 )
